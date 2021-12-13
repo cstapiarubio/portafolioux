@@ -1,0 +1,12 @@
+@mixin imgProyect(){
+	background-size: cover; 
+}
+
+@mixin herramientas(){
+	background-color: #E5F0E3;
+    margin:10px;
+    border-radius: 15px;
+    width: 200px;
+    height: 320px;
+    text-align: center;
+}
