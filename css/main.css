@@ -29,13 +29,18 @@ i {
   text-align: right;
 }
 
-.navbar-fixed {
+nav a{
+  font-weight: 600;
+  color: #3A3636 !important; 
+}
+
+/*.navbar-fixed {
   position: absolute;
   z-index: 999;
   height: 70px; }
 
 .nav-trans {
-  transition: all 1s ease; }
+  transition: all 1s ease; }*/
 
 /*HOME*/
 .photo {
@@ -111,8 +116,15 @@ i {
 
   .circle{
     width:40%;
+    margin: auto;
+    color: #FEFFFF;
   }
 
+  .img{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 @media screen and (max-width: 950px) {
   .photo p {
     width: 90%; }
@@ -175,6 +187,7 @@ i {
   100% {
     left: -400%;
     opacity: 1; } }
+
 /*sobre mi*/
 #sobremi {
   padding-bottom: 0;
@@ -194,19 +207,19 @@ i {
   background-color: rgba(255, 255, 255, 0.5);
   padding-top: 0;
   margin-top: -27px;
-  height: 100%; 
+  height: 400px;  
 }
 
 #skills div.infoher {
   opacity: 0;
   text-align: center;
   position: absolute;
-  margin: 2em;
-  top: 1%;
-  width: 60px;
-  height: 60px;
+  margin: 18px;
+  top: 3px;
+  width: 70px;
+  height: 70px;
   border-radius: 5px;
-  background: rgba(60, 54, 44, 0.8); 
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%);
 }
 
   #skills div.infoher a {
@@ -223,19 +236,26 @@ i {
   margin: 8px;
   border-radius: 15px;
   width: 120px;
-  height: 120px; }
+  height: 120px;
+  padding:1%; }
   #skills div.her img {
-    width: 80%; }
+    width: 100%; }
   #skills div.her:hover .infoher {
     opacity: 1;
     transform: scale(1.8, 1.8); }
+
+  .herramientas{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 /*PROYECTOS*/
 #proyectos {
   margin-top: -40px; }
  
   #proyectos .p1 {
-    background-image: url("../img/qbox.PNG");
+    background-image: url("../img/pantallahope.PNG");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -248,13 +268,16 @@ i {
     background-position-x: center;
     min-height: 400px;}
 
-  #proyectos .cont{
+  /*#proyectos .cont{
     border-width: 2px;
     border-style: solid;
     border-color: #0dcaf0;
     border-radius: 1%;
     padding:5%;
-    }
+    }*/
+  #proyectos .cont{
+    padding: 3%;
+  }
   
   #proyectos .descripcion{
     flex-direction: column;
@@ -270,7 +293,41 @@ i {
   /*AMO*/
   #amo{
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;
-    
+    height: 450px;
+    clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+
+  }
+
+  #amo p{
+    text-align: center;
+    color: #3A3636;
+    font-weight: 600;
+  }
+
+  /*.vector{
+    animation: rotacion 1s infinite linear;
+    transform-origin: 50% 0%;
+
+  }
+
+
+  @keyframes rotacion{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }*/
+
+  /*CONTADORES*/
+
+  #contadores h4, .counter{
+    text-align: center;
+  }
+
+  .counter{
+    font-size: 30px;
   }
 
   /*EMPRESAS*/
@@ -301,7 +358,9 @@ i {
 
 /*FOOTER*/
 footer {
-  background-color: #0dcaf0;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;
+  clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+
   height: 100%; }
   footer p {
     color: #171a1f;
@@ -343,9 +402,6 @@ footer {
   #postcontacto p {
     padding: 20px; } }
   
-span{
-  color:blue;
-}
 .banner-stories__item-wrapper .slick-dots li {
 	cursor: pointer;
 	display: inline-block;
@@ -359,18 +415,6 @@ span{
 	margin-right: 0;
 }
 	 
-.banner-stories__item-wrapper .slick-dots li.slick-active button, 
-.banner-stories__item-wrapper .slick-dots li button:hover {
-	background: white;
-}
-	 
-	
-.banner-stories {
-	background: linear-gradient(90deg, rgba(92, 33, 97, 1) 0%, rgba(166, 31, 86, 1) 100%);
-	padding-bottom: 5%;
-	padding-top: 5%;
-	text-align: center;
-}
 	
 .banner-stories h2{
   color: white;
@@ -379,7 +423,7 @@ span{
 
 .banner-stories__item {
 	background: white;
-	box-shadow: 0 2px 10px rgb(0 0 0 /20%);
+	box-shadow: 0 2px 10px #918D8D;
 	margin: .5% .5% 1% .5%;
 	opacity: .4;
 	-o-transition: all 0.4s cubic-bezier(.55, .085, .68, .53);
@@ -461,12 +505,21 @@ span{
   padding: 10px;
   width: 20px;
   height: 20px;
-  font-size:20px;
+  font-size:14px;
   list-style: none;
+  padding-left:1.8px;
+  padding-top:1.5px;
 }
 
-#dicen{
+/*#dicen{
   background-color: turquoise;
+}*/
+
+#contadores{
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;
+  height: 550px;
+  clip-path: polygon(0 12%, 100% 0%, 100% 81%, 0 94%);
+
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-/* fx nav color scroll*/
+/* fx nav color scroll
 $(document).ready(function() {
 $(window).scroll(function() {
         $('#nav-trans').toggleClass('nav', $(this).scrollTop() > $('#nav-trans').height());
@@ -8,28 +8,27 @@ $(window).scroll(function() {
   closeOnClick:true,
   menuWidth:100,
  });
+});*/
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+counters.forEach(counter=>{
+	const updateCount= ()=>{
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+		const inc = target/speed;
+
+		console.log(count);
+
+		if(count < target){
+			counter.innerText = Math.ceil(count + inc);
+			setTimeout(updateCount, 1);
+		} else{
+			count.innerText = target;
+		}
+	}
+	updateCount();
 });
-
-
-AOS.init();
-$('.banner-stories__item-wrapper').slick({
-			centerMode: true,
-  			centerPadding: '20%',
-			lazyLoad: 'progressive',
-    		arrows: false,
-    		dots: true,
-    		autoplay: false,
-    		speed: 1100,
-    		slidesToShow: 1,
-    		responsive: [{
-        		breakpoint:768,
-        		settings: {
-					centerMode: false,
-          			slidesToShow: 1,
-          			slidesToScroll: 1
-        		}
-      		}]
-  		});
 	
 
 
