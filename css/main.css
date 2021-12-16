@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+  font-family: 'Lora', sans-serif !important;
+}
 
 #principal {
   background-image: url("../img/happy-squarespace-developer-1.jpg");
