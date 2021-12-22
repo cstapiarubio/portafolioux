@@ -1,39 +1,51 @@
 * {
   margin: 0;
   padding: 0; 
-  font-family: 'Lora', sans-serif !important;
+  font-family: 'Lora', sans-serif;
 }
 
 #principal {
   background-image: url("../img/happy-squarespace-developer-1.jpg");
   background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
 
 /*TITULOS*/
 h2 {
-  font-family: 'Lora', sans-serif;
   text-align: center;
   color: #041E4B;
   font-size: 2em;
   padding: 80px 50px;
-  font-weight: bold; }
+  font-weight: bold; 
+}
 
 p {
   color: #523634;
-  font-family: 'Roboto Slab', serif; }
+}
 
-i {
-  color: #F4EADE; }
+footer i {
+  color: #F4EADE; 
+}
 
 /*NAVBAR*/
 .navbar {
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important; 
+  /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important; */
   text-align: right;
+  background-image: linear-gradient( 0.2deg,  rgba(51,204,255,1) 4.8%, rgba(51,102,255,1) 85.5% );  
 }
 
 nav a{
   font-weight: 600;
-  color: #3A3636 !important; 
+  color: #FFFFFF !important; 
+  font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover{
+  color:darkblue !important;
+}
+
+.navbar-toggler-icon{
+  color: #ffff !important;
 }
 
 /*.navbar-fixed {
@@ -51,11 +63,9 @@ nav a{
   position: relative;
   background-image: linear-gradient(0deg, rgba(36,36,36, 0.8), rgba(29, 52, 90, 0.6)), url("../img/IMG_0169.JPG");
   background-size: cover;
-  overflow: hidden; }
-  .photo a, .photo p {
-    font-family: 'Lato', sans-serif; }
-  .photo h4 {
-    font-family: 'Merriweather', serif; }
+  overflow: hidden; 
+}
+ 
   .photo ul li a {
     color: #fff;
     font-weight: bold;
@@ -63,9 +73,11 @@ nav a{
     .photo ul li a:hover{
       text-decoration: underline;
     }
+
   @media screen and (max-width: 500px) {
     .photo .photo ul li a {
-      font-size: .5em; } }
+      font-size: .5em; } 
+    }
 
 .photo-text {
   font-weight: bold;
@@ -102,7 +114,12 @@ nav a{
   text-align: center;
   margin-top: -10px;
   position: relative;
-  z-index: 999; }
+  z-index: 999; 
+}
+
+#text-principal{
+  width: 900px;
+}
 
   .btn-inicio{
     border-radius: 40px;
@@ -124,43 +141,10 @@ nav a{
 
   .img{
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
   }
-@media screen and (max-width: 950px) {
-  .photo p {
-    width: 90%; }
 
-  .grand-title {
-    width: 90%; }
-
-  .text {
-    flex-direction: column; }
-
-  .inner-content {
-    flex-flow: column wrap; }
-
-  .boxy:nth-child(1), .boxy:nth-child(2) {
-    width: 90%; }
-
-  .boxy:nth-child(1) {
-    padding: 10px; }
-
-  #slider {
-    margin-left: -55px; } }
-@media only screen and (max-width: 600px) {
-  label {
-    display: block;
-    cursor: pointer; } }
-@media screen and (max-width: 500px) {
-  #slider {
-    margin-left: -55px; }
-
-  .photo-text h4 {
-    font-size: 45px; }
-
-  .inner-text {
-    width: 80%; } }
 @keyframes slider {
   0% {
     left: 0;
@@ -198,10 +182,10 @@ nav a{
 
   #sobremi p {
     padding: 30px;
-    font-family: 'Lora', serif;
     font-size: 20px;
     width: 100%;
     border-radius: 15px; 
+    text-align: left;
   }
 
 /*HERRAMIENTAS*/
@@ -264,7 +248,7 @@ nav a{
     min-height: 400px;
    }
   #proyectos .p2 {
-    background-image: url("../img/laptop.png");
+    background-image: url("../img/laboratoria.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -285,6 +269,15 @@ nav a{
     flex-direction: column;
   }
 
+  #proyectos h4{
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .botones{
+    text-align: center;
+  }
+
 .work .col {
   display: flex;
   justify-content: flex-start; }
@@ -294,17 +287,20 @@ nav a{
 
   /*AMO*/
   #amo{
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;
+    /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;*/
     height: 450px;
     clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+    background-image: linear-gradient( 0.2deg,  rgba(51,204,255,1) 4.8%, rgba(51,102,255,1) 85.5% );  }
 
-  }
-
-  #amo p{
+  #amo h4, #amo h2{
     text-align: center;
-    color: #3A3636;
-    font-weight: 600;
+    color: white;
   }
+
+  #amo h4, #contadores h4{
+    font-size: 1.2rem;
+  }
+
 
   /*.vector{
     animation: rotacion 1s infinite linear;
@@ -324,8 +320,9 @@ nav a{
 
   /*CONTADORES*/
 
-  #contadores h4, .counter{
+  #contadores h4, .counter, #contadores h2{
     text-align: center;
+    color: #FFFFFF;
   }
 
   .counter{
@@ -333,9 +330,16 @@ nav a{
   }
 
   /*EMPRESAS*/
+  #empresa{
+    height: 400px;
+  }
   .img-empresa{
-    width:30%;
-   margin:auto;
+    width:40%;
+    margin:auto;
+  }
+
+  #laboratoria{
+    width: 90% !important;
   }
 
 /*CONTACTO*/
@@ -360,17 +364,51 @@ nav a{
 
 /*FOOTER*/
 footer {
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;
+  /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;*/
   clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+  height: 250px; 
+  background-image: linear-gradient( 0.2deg,  rgba(51,204,255,1) 4.8%, rgba(51,102,255,1) 85.5% );  
+}
 
-  height: 100%; }
   footer p {
-    color: #171a1f;
+    color: darkblue;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
     margin-top: 32px;
-    font-family: 'Roboto Slab', serif; }
+     }
+#mail{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+     .redes{
+       height: 50px;
+       width:50px;
+       border-radius: 50px;
+       border: #ffff 2px solid;
+       margin: auto;
+       display: flex;
+       align-items: center;
+     }
+     .redes:hover{
+       background-color: #fff;
+     }
+
+     footer i{
+       font-size: 1.5em;
+       color: #fff;
+     }
+
+     footer i:hover{
+       color:darkblue;
+     }
+
+     .social{
+       padding-top: 5%;
+     }
 
 #precontacto h2 {
   padding: 40px 50px 0px 50px; }
@@ -490,7 +528,7 @@ footer {
 
 #dicen ul {
   text-align: center;
- padding-top: 30%;
+  padding-top: 30%;
 }
 
 #dicen ul li{
@@ -500,28 +538,135 @@ footer {
 
 #dicen ul li a{
   display: inline-block;
-  color:white;
+  color:darkblue;
   text-decoration: none;
-  background-color: grey;
-  border-radius: 100%;
+  background-color: rgba(51,204,255,1);
+  border-radius: 50px;
   padding: 10px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   font-size:14px;
   list-style: none;
-  padding-left:1.8px;
+  font-weight: 700;
   padding-top:1.5px;
+  text-align: center;
 }
 
-/*#dicen{
-  background-color: turquoise;
-}*/
+
 
 #contadores{
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;
+  /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,120,253,0.8860586470916492) 100%) !important;*/
   height: 550px;
   clip-path: polygon(0 12%, 100% 0%, 100% 81%, 0 94%);
-
+  background-image: linear-gradient( 0.2deg,  rgba(51,204,255,1) 4.8%, rgba(51,102,255,1) 85.5% );  
 }
+
+.caja{
+  display: flex;
+  align-items: center;
+}
+
+/*media queries*/
+@media screen and (max-width: 950px) {
+  .photo p {
+    width: 90%; 
+  }
+
+  .grand-title {
+    width: 90%; 
+  }
+
+  .text {
+    flex-direction: column; 
+  }
+
+  .inner-content {
+    flex-flow: column wrap; 
+  }
+
+  .boxy:nth-child(1), .boxy:nth-child(2) {
+    width: 90%; 
+  }
+
+  .boxy:nth-child(1) {
+    padding: 10px; 
+  }
+
+  #slider {
+    margin-left: -55px; 
+  } 
+  }
+@media only screen and (max-width: 600px) {
+  label {
+    display: block;
+    cursor: pointer; 
+  }
+  h2{
+    padding:50px;
+  }
+  #amo{
+    height: 800px;
+  } 
+  #amo img, #contadores img{
+    width:20%;
+  }
+  .box{
+    margin-bottom: 10%;
+  }
+  #amo h2, #contadores h2{
+    padding-top:25%;
+  }
+
+  #skills, #dicen {
+    height:500px;
+  }
+  #contadores{
+    height: 1050px;
+  }
+  #empresa h2{
+    padding-top: 0px;
+  }
+  }
+@media screen and (max-width: 500px) {
+  #slider {
+    margin-left: -55px; }
+
+  .photo-text h4 {
+    font-size: 45px; }
+
+  .inner-text {
+    width: 80%; 
+  } 
+  .botones{
+    text-align: center;
+  }
+  #sobremi h4{
+    font-size: 1.5em;
+  }
+  h2{
+    padding-top: 25%;
+  }
+  #proyectos{
+    height: 1850px;
+  }
+  .cont{
+    margin-bottom: 12%;
+  }
+  #amo h2{
+    padding-top: 30%;
+  }
+  #amo, #skills{
+    height: 700px;
+  }
+  #dicen{
+    height: 600px;
+  }
+  #contadores{
+    height: 900px;
+  }
+  #sobremi h4{
+    padding-top: 25%;
+  }
+  }
 
 /*# sourceMappingURL=main.css.map */

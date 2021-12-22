@@ -11,14 +11,12 @@ $(window).scroll(function() {
 });*/
 
 const counters = document.querySelectorAll('.counter');
-const speed = 200;
+const speed = 900;
 counters.forEach(counter=>{
 	const updateCount= ()=>{
 		const target = +counter.getAttribute('data-target');
 		const count = +counter.innerText;
 		const inc = target/speed;
-
-		console.log(count);
 
 		if(count < target){
 			counter.innerText = Math.ceil(count + inc);
@@ -29,6 +27,23 @@ counters.forEach(counter=>{
 	}
 	updateCount();
 });
-	
+
+function heart(){
+	setTimeout(function(){
+		$("#corazon").toggleClass('bi bi-suit-heart', 2000).toggleClass('bi bi-suit-heart-fill', 2000);
+	}, 1000)
+}
+heart();
+setInterval(heart, 2000);
+
+/*function calendar(){
+	let calend = document.getElementById("calendario");
+	setTimeout(function(){
+		$("calend").toggleClass('bi bi-calendar', 2000).toggleClass('bi bi-calendar-check', 2000);
+	}, 1000)
+}
+calendar();
+setInterval(calendar, 2000);*/
+
 
 
