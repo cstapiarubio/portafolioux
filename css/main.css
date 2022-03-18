@@ -254,6 +254,19 @@ nav a:hover{
     background-position-x: center;
     min-height: 400px;}
 
+    #proyectos .p3 {
+      background-image: url("../img/leocover.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      min-height: 400px;
+     }
+    #proyectos .p4 {
+      background-image: url("../img/itau.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      min-height: 400px;}
   /*#proyectos .cont{
     border-width: 2px;
     border-style: solid;
